@@ -14,7 +14,9 @@
         </worker>
     </workteam>
     <abstract>
-        <p></p>
+        <p>Exercicio 1: Foi usado o casamentos-fixed.json. Para dar setup à base de dados, foi efetuado o seguinte comando: 
+        <i>mongoimport --db Teste --collection casamentos --file casamentos-fixed.json --jsonArray</i></p>
+        <p>Excericio 2: Comando para inicializar: <i>npm start</i>. Servidor à escuta na porta 9000. </p>
     </abstract>
     <deliverables>
     </deliverables>

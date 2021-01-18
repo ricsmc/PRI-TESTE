@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1 #{dados.titulo}
+  p #{dados.descricao}
+  if(dados.filhos.length > 0)
+    h2 Filhos 
+    ul
+        for i in dados.filhos
+            li
+                a(href='/classes/c' + i.codigo) #{i.titulo}
+  else 
+     h2 Processos Relacionados    
+     ul
+        for i in dados.processosRelacionados
+          -var y = i.tipoRel.split('#')
+          if(y[1] == "eCruzadoCom" || y[1] == "eComplementarDe" || y[1] == "eSuplementoDe" || y[1] == "eSuplementoPara" )
+            li
+                a(href='/classes/c' + i.codigo) #{i.titulo}
+  if(dados.nivel > 1) 
+    -var x = dados.codigo.split('.')
+    if(dados.nivel == 2)
+      a(href='/classes/c' +x[0]) [Voltar ao nivel anterior]
+    else
+      a(href='/classes/c' +x[0] + '.' +x[1]) [Voltar ao nivel anterior]
+  a(href='/') [Voltar a página inicial]

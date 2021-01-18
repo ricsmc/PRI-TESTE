@@ -1,0 +1,1 @@
+mongoimport --db Teste --collection casamentos --file casamentos-fixed.json --jsonArray

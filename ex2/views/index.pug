@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Classes
+  ul
+    for i in dados
+      li
+        a(href='/classes/c' + i.codigo) #{i.titulo}
+
