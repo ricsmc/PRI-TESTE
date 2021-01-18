@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>PRI20-21_TESTE</key>
+        <title>TESTE</title>
+        <bdate>18-01-2021</bdate>
+        <edate>18-01-2021</edate>
+        <supervisor url="mailto:jcr@di.uminho.pt">José Carlos Ramalho</supervisor>
+    </meta>
+    <workteam>
+        <worker num="A84302">
+            <name>José Ricardo Cunha</name>
+            <email>a84302@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p></p>
+    </abstract>
+    <deliverables>
+    </deliverables>
+</pr>
